@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #E6E6FA;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 25%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 75%;
+  background-color: #E6E6FA;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: auto;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>How to Operate a Record Player</h1>
+  <p>An Essential Guide</p>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <nav class="topnav" id="navbar">
+        <header>
+        <a href="#record_player_resources" class="nav-link" id="nav-link">
+            Record Player Resources
+            </a>
+            </header>
+          <a href="#record_store" class="nav-link" id="nav-link">
+            Record Store
+            </a>
+          <a href="#upgrading_equipment" class="nav-link" id="nav-link">
+            Upgrading Equipment
+            </a>
+          <a href="#vinyl_deals" class="nav-link" id="nav-link">
+            Vinyl Deals
+            </a>
+          <a href="#forum" class="nav-link" id="nav-link">
+            Forum
+            </a>
+      </nav>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <main id="main-doc">
+    <div class="card">
+      <section class="main-section" id="record_player_resources">
+      <header>Record Player Resources</header>
+      <code></code>
+      <div class="fakeimg"><img src="imagesr/recordfive.jpg" alt="Recordfive"</img></div>
+      <p></p>
+      <p>Hobbyist or Audiophile? Look no further, here is a guide to all the frequently asked questions in setting up record players.</p>
+      </section>
+    </div>
+    <div class="card">
+      <section class="main-section" id="record_store">
+      <header>Record Store</header>
+      <code></code>
+      <div class="fakeimg"><img src="imagesr/recordone.png" alt="Recordone"></img></div>
+      <p></p>
+      <p>Support your local indie record stores and support local artists.</p>
+      </section>
+    </div>
+    <div class="card">
+      <section class="main-section" id="upgrading_equipment">
+      <header>Upgrading Equipment</header>
+      <code></code>
+      <ol>
+        <li>Make sure you have enough budget for purchases.</li>
+        <li>Compare prices amongst brands.</li>
+        <li>Ask questions in our forum for personal reviews.</li>
+        <li>Check compatability of systems.</li>
+        <li>Periodically clean equipment of surface dust.</li>
+        </ol>
+      <div class="fakeimg"><img src="imagesr/recordtwo.jpg" alt="Recordtwo"</img></div>
+      <p></p>
+      <p>An informative guide if you're looking to upgrade your speakers or turntables.</p>
+      </section>
+    </div>
+    <div class="card">
+      <section class="main-section" id="vinyl_deals">
+      <header>Vinyl Deals</header>
+      <code></code>
+      <div class="fakeimg"><img src="imagesr/recordfour.jpg" alt="Recordfour"</img></div>
+      <p></p>
+      <p>Want to get great deals shopping for Vinyl? Click here.</p>
+      </section>
+    </div>
+    <div class="card">
+      <section class="main-section" id="forum">
+      <header>Forum</header>
+      <code></code>
+      <div class="fakeimg"><img src="imagesr/recordthree.jpg" alt="Recordthree"</img></div>
+      <p></p>
+      <p>Fans of records can socialize here in our forum.</p>
+      </section>
+    </div>
+    </main>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>For more information visit your local record store.</h2>
+</div>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
